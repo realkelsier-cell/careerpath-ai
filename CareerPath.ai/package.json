@@ -4,25 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:wasm && npm run build:python && npm run build:go && vite build",
-    "build:wasm": "cd logic/rust && wasm-pack build --target web --out-dir ../../public/wasm/matcher",
-    "build:python": "cp logic/python/interest_parser.py public/pyodide/",
-    "build:go": "cd logic/go && tinygo build -o ../../public/wasm/pdfgen.wasm -target wasm pdfgen.go"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "fuse.js": "^7.0.0",
-    "chart.js": "^4.4.0",
-    "react-chartjs-2": "^5.2.0",
-    "pyodide": "^0.26.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "vite": "^5.4.0",
-    "@vitejs/plugin-react": "^4.3.0",
-    "typescript": "^5.5.0",
-    "@types/react": "^18.3.0",
-    "wasm-pack": "^0.12.1",
-    "tinygo": "^0.31.0"
+    "@vitejs/plugin-react": "^4.3.0"
   }
 }
