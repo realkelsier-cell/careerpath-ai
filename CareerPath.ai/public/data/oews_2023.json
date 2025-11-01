@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Software Developers",
+    "code": "15-1252",
+    "employment": 1592600,
+    "mean_wage": 132270,
+    "growth_10yr": 25.7,
+    "top_states": ["CA", "WA", "NY"],
+    "skills": ["JavaScript", "Python", "Agile"]
+  }
+]
